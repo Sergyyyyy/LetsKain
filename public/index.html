@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,98 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
-        
+    <nav>
+        <h2 class="nav-logo">LetsKain!</h2>
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>About</li>
+            <li>Recipes</li>
+            <li>My Recipes</li>
+            <li>Blog</li>
+        </ul>
+        <button class="general-btn-class nav-btn">Contact Me</button>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-left">
+            <p class="hero-top-text">FOOD RECIPES</p>
+            <h1 class="hero-main-text">Discover the Joy of Food!</h1>
+            <h3 class="hero-secondary-text">Looking for something new? Explore our library of recipes and get inspired!
+            </h3>
+            <button class="hero-btn">Recipes -></button>
+        </div>
+        <div class="hero-right"></div>
+    </div>
+
+    <div class="about">
+        <div class="about-left"></div>
+        <div class="about-right">
+            <h2 class="about-main-text">What is LetsKain!</h2>
+            <p class="about-description">LetsKain! is a web-based recipe discovery and cookbook app that helps you
+                explore, save, and organize recipes in one place. Inspired by platforms like Allrecipes, we offer a
+                clean and intuitive interface for searching recipes, viewing detailed instructions, and managing your
+                personal collection. Our mission is simple: spend less time searching and more time cooking delicious
+                meals. Welcome to LetsKain!</p>
+        </div>
+    </div>
+
+    <div class="recipes">
+        <div class="recipes-top">
+            <h1>Our Recipes</h1>
+            <input type="text" class="recipe-search" placeholder="Search">
+        </div>
+        <div class="recipes-bottom">
+            <!--Sample recipe card-->
+            <div class="recipe-card">
+                <img src="sample.png" alt="sample">
+                <p class="recipeTitle">Ribeye Steak</p>
+                <div class="recipe-btn-group">
+                    <button class="general-btn-class btnViewRecipe">View Recipe</button>
+                    <button class="general-btn-class btnSaveRecipe">Save Recipe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="faq">
+        <div class="faq-left"></div>
+        <div class="faq-right">
+            <h1>Frequently Asked Questions</h1>
+            <div class="faq-question-group">
+                <p>1. Where do the recipes come from?</p>
+                <button class="faq-dropdown-toggle">+</button>
+                <div class="faq-reveal"></div>
+            </div>
+            <div class="faq-question-group">
+                <p>2. Can I create my own recipe?</p>
+                <button class="faq-dropdown-toggle">+</button>
+                <div class="faq-reveal"></div>
+            </div>
+            <div class="faq-question-group">
+                <p>3. How do I save a recipe?</p>
+                <button class="faq-dropdown-toggle">+</button>
+                <div class="faq-reveal"></div>
+            </div>
+            <div class="faq-question-group">
+                <p>4. Do I need an internet connection?</p>
+                <button class="faq-dropdown-toggle">+</button>
+                <div class="faq-reveal"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="contact-left">
+            <h1>Connect with the Team!</h1>
+            <input type="text">
+            <input type="text">
+            <textarea name="" id=""></textarea>
+            <button class="general-btn-class conact-btn">Send Message</button>
+        </div>
+        <div class="contact-right"></div>
+    </div>
 </body>
+
 </html>
