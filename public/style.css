@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+/* Nav Style */
+
+nav {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-weight: 400;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+
+.nav-links li {
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-btn {
+    background-color: #FFC000;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+}
+
+
+
+/* Hero Style */
+
+.hero {
+    padding: 20px 40px;
+    height: 90vh;
+    background-image: url(../assets/image1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-left {
+    height: 400px;
+    width: 45%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-main-text {
+    font-size: 96px;
+    font-weight: 500;
+}
+
+.hero-secondary-text {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.hero-right {
+    height: 400px;
+    width: 45%;
+}
+
+.hero-btn {
+    margin-top: 20px;
+    width: 30%;
+    background-color: #000;
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+}
+
+
+/* About Style */
+
+.about{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-left{
+    height: 400px;
+    width: 30%;
+    background-image: url(../assets/about.png);
+}
+
+.about-right{
+    height: 400px;
+    width: 30%;
+}
