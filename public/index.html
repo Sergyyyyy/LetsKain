@@ -13,39 +13,54 @@
     <nav>
         <h2 class="nav-logo">LetsKain!</h2>
         <ul class="nav-links">
-            <li>Home</li>
-            <li>About</li>
-            <li>Recipes</li>
-            <li>My Recipes</li>
-            <li>Blog</li>
+            <a href="#hero">
+                <li>Home</li>
+            </a>
+            <a href="#about">
+                <li>About</li>
+            </a>
+            <a href="#recipes">
+                <li>Recipes</li>
+            </a>
+            <a href="">
+                <li>My Recipes</li>
+            </a>
+            <a href="#faq">
+                <li>FAQ</li>
+            </a>
         </ul>
-        <button class="general-btn-class nav-btn">Contact Me</button>
+        <button class="nav-btn">Contact Me</button>
     </nav>
 
-    <div class="hero">
+    <div class="hero" id="hero">
         <div class="hero-left">
             <p class="hero-top-text">FOOD RECIPES</p>
             <h1 class="hero-main-text">Discover the Joy of Food!</h1>
             <h3 class="hero-secondary-text">Looking for something new? Explore our library of recipes and get inspired!
             </h3>
-            <button class="hero-btn">Recipes -></button>
+            <button class="general-btn-class hero-btn">Recipes -></button>
         </div>
         <div class="hero-right"></div>
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="about-left"></div>
         <div class="about-right">
             <h2 class="about-main-text">What is LetsKain!</h2>
-            <p class="about-description">LetsKain! is a web-based recipe discovery and cookbook app that helps you
-                explore, save, and organize recipes in one place. Inspired by platforms like Allrecipes, we offer a
-                clean and intuitive interface for searching recipes, viewing detailed instructions, and managing your
-                personal collection. Our mission is simple: spend less time searching and more time cooking delicious
-                meals. Welcome to LetsKain!</p>
+            <div class="about-description-group">
+                <p class="about-description">LetsKain! is a web-based recipe discovery and cookbook app that helps you
+                    explore, save, and organize recipes in one place. Inspired by platforms like Allrecipes, we offer a
+                    clean and intuitive interface for searching recipes, viewing detailed instructions, and managing
+                    your
+                    personal collection.</p>
+                <p class="about-description">Our mission is simple: spend less time searching and more time cooking
+                    delicious
+                    meals. Welcome to LetsKain!</p>
+            </div>
         </div>
     </div>
 
-    <div class="recipes">
+    <div class="recipes" id="recipes">
         <div class="recipes-top">
             <h1>Our Recipes</h1>
             <input type="text" class="recipe-search" placeholder="Search">
@@ -54,16 +69,68 @@
             <!--Sample recipe card-->
             <div class="recipe-card">
                 <img src="../assets/samplePhoto.png" alt="sample">
-                <p class="recipeTitle">Ribeye Steak</p>
-                <div class="recipe-btn-group">
-                    <button class="general-btn-class btnViewRecipe">View Recipe</button>
-                    <button class="general-btn-class btnSaveRecipe">Save Recipe</button>
+                <div class="recipe-card-content">
+                    <p class="recipeTitle">Ribeye Steak</p>
+                    <div class="recipe-btn-group">
+                        <button class="btnViewRecipe">View Recipe</button>
+                        <button class="btnSaveRecipe">Save Recipe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../assets/samplePhoto.png" alt="sample">
+                <div class="recipe-card-content">
+                    <p class="recipeTitle">Ribeye Steak</p>
+                    <div class="recipe-btn-group">
+                        <button class="btnViewRecipe">View Recipe</button>
+                        <button class="btnSaveRecipe">Save Recipe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../assets/samplePhoto.png" alt="sample">
+                <div class="recipe-card-content">
+                    <p class="recipeTitle">Ribeye Steak</p>
+                    <div class="recipe-btn-group">
+                        <button class="btnViewRecipe">View Recipe</button>
+                        <button class="btnSaveRecipe">Save Recipe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../assets/samplePhoto.png" alt="sample">
+                <div class="recipe-card-content">
+                    <p class="recipeTitle">Ribeye Steak</p>
+                    <div class="recipe-btn-group">
+                        <button class="btnViewRecipe">View Recipe</button>
+                        <button class="btnSaveRecipe">Save Recipe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../assets/samplePhoto.png" alt="sample">
+                <div class="recipe-card-content">
+                    <p class="recipeTitle">Ribeye Steak</p>
+                    <div class="recipe-btn-group">
+                        <button class="btnViewRecipe">View Recipe</button>
+                        <button class="btnSaveRecipe">Save Recipe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="recipe-card">
+                <img src="../assets/samplePhoto.png" alt="sample">
+                <div class="recipe-card-content">
+                    <p class="recipeTitle">Ribeye Steak</p>
+                    <div class="recipe-btn-group">
+                        <button class="btnViewRecipe">View Recipe</button>
+                        <button class="btnSaveRecipe">Save Recipe</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="faq">
+    <div class="faq" id="faq">
         <div class="faq-left"></div>
         <div class="faq-right">
             <h1>Frequently Asked Questions</h1>
@@ -71,26 +138,30 @@
                 <p>1. Where do the recipes come from?</p>
                 <button class="faq-dropdown-toggle">+</button>
                 <div class="faq-reveal"></div>
+                <!--The recipes come from a free API called THEMEALDB!-->
             </div>
             <div class="faq-question-group">
                 <p>2. Can I create my own recipe?</p>
                 <button class="faq-dropdown-toggle">+</button>
                 <div class="faq-reveal"></div>
+                <!--For now that feature is out of the scope. However, we will note this for future implementations.-->
             </div>
             <div class="faq-question-group">
                 <p>3. How do I save a recipe?</p>
                 <button class="faq-dropdown-toggle">+</button>
                 <div class="faq-reveal"></div>
+                <!--Navigate or search your chosen recipe, click 'Save Recipe' to save the recipe. You can view your saved recipes in the 'My Recipes' tab.-->
             </div>
             <div class="faq-question-group">
                 <p>4. Do I need an internet connection?</p>
                 <button class="faq-dropdown-toggle">+</button>
                 <div class="faq-reveal"></div>
+                <!--Yes! you need internet connection for the functionalities to work.-->
             </div>
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contact-left">
             <h1>Connect with the Team!</h1>
             <input type="text">
